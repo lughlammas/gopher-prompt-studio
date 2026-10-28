@@ -1,0 +1,13 @@
+{
+  "goal": "quero montar uma base de bateria e baixo",
+  "language": "pt-BR",
+  "context": {
+    "fl_studio_version": "2025",
+    "project_state": "Projeto vazio; ainda não escolhi instrumentos.",
+    "preferences": ["reggae dub dos anos 1980"],
+    "constraints": ["usar somente plugins já licenciados"],
+    "observations": [],
+    "proposals": [],
+    "unknowns": ["BPM e tonalidade ainda não definidos"]
+  }
+}

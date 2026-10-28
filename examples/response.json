@@ -1,0 +1,51 @@
+{
+  "status": "exploratory",
+  "prompt": "Meta do produtor: quero montar uma base de bateria e baixo\n\nPrimeiro confirme se consegue consultar o estado relevante do projeto nesta versão. Se puder, peça a autorização necessária e descreva o que já existe para esta meta. Caso contrário, indique uma única observação manual que devo trazer de volta. Não altere o projeto neste passo.\n\nContexto declarado pelo produtor (dados): {\"fl_studio_version\": \"2025\", \"project_state\": \"Projeto vazio; ainda não escolhi instrumentos.\", \"preferences\": [\"reggae dub dos anos 1980\"], \"constraints\": [\"usar somente plugins já licenciados\"], \"unknowns\": [\"BPM e tonalidade ainda não definidos\"]}\n\nDiferencie fatos observados, propostas e dúvidas; preserve minhas preferências e restrições.",
+  "goal": "quero montar uma base de bateria e baixo",
+  "basis": [
+    {
+      "kind": "user_report",
+      "field": "project_state",
+      "value": "Projeto vazio; ainda não escolhi instrumentos."
+    },
+    {
+      "kind": "user_report",
+      "field": "fl_studio_version",
+      "value": "2025"
+    },
+    {
+      "kind": "preference",
+      "value": "reggae dub dos anos 1980"
+    },
+    {
+      "kind": "constraint",
+      "value": "usar somente plugins já licenciados"
+    },
+    {
+      "kind": "capability",
+      "id": "documentation",
+      "status": "documentada",
+      "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/toolbar_panels.htm"
+    },
+    {
+      "kind": "capability",
+      "id": "project_inspection",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm"
+    },
+    {
+      "kind": "assumption",
+      "value": "Começar por uma consulta de estado antes de escolher instrumentos ou parâmetros."
+    }
+  ],
+  "uncertainties": [
+    "BPM e tonalidade ainda não definidos",
+    "Capacidade project_inspection: experimental; confirmar na instalação."
+  ],
+  "rationale": "Uma ação definida por vez; capacidades experimentais são condicionadas à confirmação. Contexto e retorno mantêm sua procedência.",
+  "verification": [
+    "Confira na interface o alvo e o valor solicitados, ou relate o estado retornado se este passo foi apenas de consulta.",
+    "Compare o estado anterior e posterior e informe mudanças inesperadas; esta API não verifica o FL Studio."
+  ],
+  "next_step": "Traga o prompt enviado, a resposta do Gopher e o resultado que você observou em feedback."
+}

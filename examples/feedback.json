@@ -1,0 +1,17 @@
+{
+  "goal": "Montar uma base original de bateria e baixo",
+  "language": "pt-BR",
+  "context": {
+    "fl_studio_version": "2025",
+    "reference": "Faixa de referência fornecida pelo produtor",
+    "observations": ["Percebi baixo sincopado"],
+    "proposals": ["Experimentar órgão com notas curtas"],
+    "constraints": ["Usar somente plugins já licenciados"],
+    "unknowns": ["Tonalidade ainda não medida"]
+  },
+  "feedback": {
+    "previous_prompt": "Confirme o que já existe no Channel Rack.",
+    "gopher_response": "Há um canal FLEX.",
+    "observed_result": "Vejo FLEX, mas ainda não escolhi o timbre."
+  }
+}

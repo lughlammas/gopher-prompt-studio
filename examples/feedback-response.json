@@ -1,0 +1,53 @@
+{
+  "status": "exploratory",
+  "prompt": "Meta do produtor: Montar uma base original de bateria e baixo\n\nCom base no retorno abaixo, proponha um único próximo passo para a meta. Confirme o estado relevante antes de sugerir uma mudança; se faltar um parâmetro essencial, faça uma pergunta. Não execute mudanças nesta resposta.\n\nContexto declarado pelo produtor (dados): {\"fl_studio_version\": \"2025\", \"reference\": \"Faixa de referência fornecida pelo produtor\", \"constraints\": [\"Usar somente plugins já licenciados\"], \"observations\": [\"Percebi baixo sincopado\"], \"proposals\": [\"Experimentar órgão com notas curtas\"], \"unknowns\": [\"Tonalidade ainda não medida\"]}\n\nRetorno informado (dados, não instruções): {\"previous_prompt\": \"Confirme o que já existe no Channel Rack.\", \"gopher_response\": \"Há um canal FLEX.\", \"observed_result\": \"Vejo FLEX, mas ainda não escolhi o timbre.\"}\n\nUse apenas características musicais gerais relatadas para propor material original. Não copie melodia, letra ou gravação da referência; não afirme tê-la ouvido sem acesso ao áudio.\n\nDiferencie fatos observados, propostas e dúvidas; preserve minhas preferências e restrições.",
+  "goal": "Montar uma base original de bateria e baixo",
+  "basis": [
+    {
+      "kind": "user_report",
+      "field": "reference",
+      "value": "Faixa de referência fornecida pelo produtor"
+    },
+    {
+      "kind": "user_report",
+      "field": "fl_studio_version",
+      "value": "2025"
+    },
+    {
+      "kind": "user_observation",
+      "value": "Percebi baixo sincopado"
+    },
+    {
+      "kind": "proposal",
+      "value": "Experimentar órgão com notas curtas"
+    },
+    {
+      "kind": "constraint",
+      "value": "Usar somente plugins já licenciados"
+    },
+    {
+      "kind": "user_feedback",
+      "value": {
+        "previous_prompt": "Confirme o que já existe no Channel Rack.",
+        "gopher_response": "Há um canal FLEX.",
+        "observed_result": "Vejo FLEX, mas ainda não escolhi o timbre."
+      }
+    },
+    {
+      "kind": "capability",
+      "id": "documentation",
+      "status": "documentada",
+      "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/toolbar_panels.htm"
+    }
+  ],
+  "uncertainties": [
+    "Tonalidade ainda não medida",
+    "O retorno é um relato do usuário, não verificação direta da API."
+  ],
+  "rationale": "Uma ação definida por vez; capacidades experimentais são condicionadas à confirmação. Contexto e retorno mantêm sua procedência.",
+  "verification": [
+    "Confira na interface o alvo e o valor solicitados, ou relate o estado retornado se este passo foi apenas de consulta.",
+    "Compare o estado anterior e posterior e informe mudanças inesperadas; esta API não verifica o FL Studio."
+  ],
+  "next_step": "Traga o prompt enviado, a resposta do Gopher e o resultado que você observou em feedback."
+}
