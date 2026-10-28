@@ -1,0 +1,62 @@
+{
+  "reviewed_on": "2026-10-28",
+  "note": "Snapshot for human review, not a guarantee about the installed version. Experimental actions must be confirmed in Gopher.",
+  "capabilities": [
+    {
+      "id": "documentation",
+      "name": "Orientação sobre FL Studio / FL Studio guidance",
+      "description": "Answers questions using FL Studio support documentation.",
+      "status": "documentada",
+      "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/toolbar_panels.htm",
+      "limitations": ["Answers may be incorrect; verify in the installed version."]
+    },
+    {
+      "id": "project_inspection",
+      "name": "Inspeção do projeto / Project inspection",
+      "description": "May report channels, plugins and Mixer state after user approval.",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm",
+      "limitations": ["Requires the user's permission inside FL Studio.", "Availability depends on the installed version."]
+    },
+    {
+      "id": "tempo",
+      "name": "Tempo do projeto / Project tempo",
+      "description": "May read or set the project BPM.",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm",
+      "limitations": ["Confirm availability and the exact requested BPM before changing it."]
+    },
+    {
+      "id": "channel_rack",
+      "name": "Channel Rack",
+      "description": "May manage channels and populate sequencer steps.",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm",
+      "limitations": ["Specify one target and one operation per instruction.", "Do not assume instruments or channels are already present."]
+    },
+    {
+      "id": "mixer",
+      "name": "Mixer",
+      "description": "May adjust track controls, routing and effect slots.",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm",
+      "limitations": ["Require an identified track and a precise operation."]
+    },
+    {
+      "id": "plugin_parameters",
+      "name": "Parâmetros de plugins / Plugin parameters",
+      "description": "May adjust controls exposed by plugins to FL Studio.",
+      "status": "experimental",
+      "source": "https://cluster.image-line.com/fl-studio-learning/fl-studio-online-manual/html/gopher/gopher_control.htm",
+      "limitations": ["Not every plugin exposes every parameter."]
+    },
+    {
+      "id": "audio_analysis",
+      "name": "Análise direta de áudio / Direct audio analysis",
+      "description": "No confirmation here that Gopher listens to audio or measures its musical properties.",
+      "status": "desconhecida",
+      "source": "Review note: the reviewed control manual does not establish this capability.",
+      "limitations": ["Ask Gopher what it can inspect; treat user observations as reports, not measurements by this API."]
+    }
+  ]
+}
